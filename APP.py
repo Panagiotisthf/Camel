@@ -33,7 +33,9 @@ def Suppliers():
 @app.route('/Agents')
 def Agents():
     return render_template('Agents.html')
-
+@app.route('/Cars')
+def Cars():
+    return render_template('Cars.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
