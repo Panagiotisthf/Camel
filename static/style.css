@@ -1,100 +1,57 @@
 body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background-color: #f9f9f9;
+    background-color: white;
+    
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 220px; /* Ensure both menu and content are aligned within this width */
-}
-
-.menu {
-    background-color: #800020;
-    padding: 20px;
-    border-right: 1px solid #ddd;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-}
-
-
-.menu a {
-    display: block;
-    padding: 10px 16px;
-    margin: 5px 0;
-    text-decoration: none;
-    color: #333;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.menu a:hover {
-    background-color: #ddd;
-    color: #000;
-}
-
-.content {
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-}
-
-
-
-
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropbtn {
-    background-color: #f3e7e7;
-    color: #333;
-    padding: 10px 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.dropdown-content {
-    display: none;
+.center-container{
+    background-color: #fcf1c5;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 17%;
+    height:100%;
+    transform: translate(-50%, -50%);
 }
 
-.dropdown-content a {
-    color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #ddd;
-}
-
-.dropdown-btn .dropdown-symbol {
-    margin-left: 5px; /* Adjust spacing between button text and symbol */
-}
 
 img {
-    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
-    margin: 0 auto; /* Center the image horizontally */ 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    max-width: 50%; /* Ensure the image doesn't exceed its container's width */
+    margin: 0 auto;
+    display: flex; /* Center the image horizontally */ 
+
 }
+
+h1{
+    justify-content: center;
+    align-items: center;
+    display: flex; /* Center the image horizontally */ 
+
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.menu button {
+    padding: 10px 20px;
+    margin: 12px 0;
+    width: 50%;
+    height:50%;
+    font-size: 18px;
+    background-color: 	#FFD700;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu button:hover {
+    background-color:	#FFD700;
+}
+
+
+
+
+

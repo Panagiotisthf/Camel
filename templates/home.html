@@ -4,63 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
     <title>Home Page</title>
 </head>
 <body>
- <div class="container">
+ <div class="center-container">
+
+    <div class="content2">
+        <h1>CAMEL CAR HIRE</h1>
+    </div>
+
     <div class="content">
-        <h1>Camel Car Hire</h1>
         <img src="{{ url_for('static', filename='images/cropped-logopsdunfinished.webp') }}">
     </div>
+    
+
+
     <div class="menu">
-        <a href="#dashboard">Dashboard</a>
-        
-        <div class="dropdown">
-            <button class="dropbtn">Aggreement</button> <span class="dropdown-symbol">▼</span></button>
-            <div class="dropdown-content">
-                <a href="#createaggreement">Create Aggreement</a>
-                <a href="#printaggreement">Print Aggreement</a>
-                <a href="#aggrementhistory">Aggreement Statistics</a>
-            </div>
-        </div>
+            <button onclick="goToPage('/Dashboard')">Dashboard</button>
+            <button onclick="goToPage('/Cashflow')">Cash Flow</button>
+            <button onclick="goToPage('/Aggreements')">Aggreements</button>
+            <button onclick="goToPage('/Contracts')">Contracts</button>
+            <button onclick="goToPage('/Expenses')">Expenses</button>
+            <button onclick="goToPage('/Suppliers')">Suppliers</button>
+            <button onclick="goToPage('/Agents')">Agents</button>
 
-        <a href="#cashFlow">Cash Flow</a>
-
-
-        <div class="dropdown">
-            <button class="dropbtn">Contracts</button> <span class="dropdown-symbol">▼</span></button>
-            <div class="dropdown-content">
-                <a href="#createcontract">Create Contract</a>
-                <a href="#contracthistory">Contract Statistics</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button class="dropbtn">Expenses</button> <span class="dropdown-symbol">▼</span></button>
-            <div class="dropdown-content">
-                <a href="#creatcarexpense">Create Expense</a>
-                <a href="#carhistory">Expense Statistics</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button class="dropbtn">Suppliers</button> <span class="dropdown-symbol">▼</span></button>
-            <div class="dropdown-content">
-                <a href="#createaggreement">Create Supplier</a>
-                <a href="#Aggreement History">Suppliers Statistics</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button class="dropbtn">Agents</button> <span class="dropdown-symbol">▼</span></button>
-            <div class="dropdown-content">
-                <a href="#createagent">Create Agent</a>
-                <a href="#agenthistory">Agents Statistics</a>
-            </div>
-        </div>
-
-
+            
+            <!-- Add more buttons as needed -->
     </div>
+
  </div>
 </body>
 </html>
